@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .tbb {
+            /* border-collapse: collapse; */
+            background-color: aqua;
+        }
+
+        .tbb td {
+            /* width: 50px;
+            height: 50px; */
+        }
+    </style>
+    
+    <table border="1">
+        <tr>
+            <td height="100" width="100" align="end" valign="bottom"> dsg </td>
+            <td> dsg </td>
+            <td> dsg </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>54</td>
+            <td>5363</td>
+        </tr>
+        <tr>
+            <td rowspan="2"> dsg </td>
+            <td> dsg </td>
+            <td> dsg </td>
+        </tr>
+        <tr>
+            <!-- <td>3</td> -->
+            <td>54</td>
+            <td>5363</td>
+        </tr>
+        <tr>
+            <td colspan="2">3</td>
+            <!-- <td>54</td> -->
+            <td>5363</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>54</td>
+            <td>5363</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="tbb" border="1">
+        <tr>
+            <td colspan="2" rowspan="2">1</td>
+            <!-- <td>2</td> -->
+            <td>3</td>
+        </tr>
+        <tr>
+            <!-- <td>4</td> -->
+            <!-- <td>5</td> -->
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+
+    <hr>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th width="100">
+                    Name
+                </th>
+                <th width="100">
+                    Model
+                </td>
+                <th width="100">
+                    Price
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="f_weight"> Iphone </td>
+                <td> 12 </td>
+                <td> 500$ </td>
+            </tr>
+            <tr>
+                <td  class="f_weight"> Xiomi </td>
+                <td> 13T </td>
+                <td> 650$ </td>
+            </tr>
+            <tr>
+                <td  class="f_weight"> Samsung</td>
+                <td> S12 </td>
+                <td> 600$ </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2"> Summary: </th>
+                <!-- <th></th> -->
+                <th> 1750$ </th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

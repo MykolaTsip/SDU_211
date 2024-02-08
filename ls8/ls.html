@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .myGrid {
+            /* display: flex; */
+            display: grid;
+
+            /* grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 100px 100px 100px; */
+
+            /* grid-template-columns: 200px 1fr auto; */
+            /* grid-template-columns: repeat(3, 1fr) minmax(10px, 20px) fit-content(100px); */
+            /* grid-template-rows: repeat(3, 50px); */
+
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 60px);
+            
+            grid-auto-columns: 100px;
+            grid-auto-rows: 100px;
+
+        }
+
+        .col2 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .row2 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .cite {
+            display: grid;
+
+            grid-template-areas: 'itheader itheader itheader'
+                                 'aside conten conten'
+                                 'foot foot foot';
+        }
+
+        .myHe {
+            background-color: yellow;
+            margin: 10px;
+            grid-area: itheader;
+        }
+
+        .mySide {
+            background-color: orange;
+            margin: 10px;
+            grid-area: aside;
+        }
+
+        .myCont {
+            background-color: silver;
+            margin: 10px;
+            grid-area: conten;
+        }
+
+        .myFoot {
+            background-color: black;
+            margin: 10px;
+            grid-area: foot;
+        }
+    </style>
+
+    <div class="myGrid">
+        <div>1</div>
+        <div class="col2">2</div>
+        <div class="row2">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+
+    </div>
+
+
+    <div class="cite">
+        <div class="myHe"> Header</div>
+        <div class="mySide"> Sidebar </div>
+        <div class="myCont"> Content</div>
+        <div class="myFoot"> Footer </div>
+    </div>
+    
+</body>
+</html>
